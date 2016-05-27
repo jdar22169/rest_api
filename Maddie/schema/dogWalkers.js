@@ -1,8 +1,8 @@
 'use strict';
 const mongoose = require('mongoose');
-const DogWalkers = new mongoose.Schema({
-  name: String
-  max dogs: Number
+const DogWalker = new mongoose.Schema({
+  name: String,
+  max_dogs: Number
 });
 
-module.exports = mongoose.model('dogWalkers', DogWalkers);
+module.exports = mongoose.model('dogWalker', DogWalker);
