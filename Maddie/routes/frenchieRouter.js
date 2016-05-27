@@ -36,6 +36,6 @@ frenchieRouter.delete('/:frenchie_id', (req,res) => {
   console.log('hit the delete route');
   Frenchie.findOneAndRemove({_id:req.params.frenchie_id}, null, (err,data) => {
     if(err) return res.json({message:err.message});
-    res.json({message:'Deleted Frenchie with id of ' + req.params.frenchie_id})
+    res.json({message:'Deleted Frenchie'})
   })
 })
