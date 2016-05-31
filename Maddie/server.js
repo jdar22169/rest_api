@@ -12,7 +12,7 @@ mongoose.connect(dbPort);
 
 app.use('/frenchie', frenchieRouter)
 app.use('/dogwalkers', dogWalkerRouter)
-app.use('/number', mixedRouter)
+app.use('/unfortunate', mixedRouter)
 app.use((err,req,res,next) => {
   res.status(404).json({message:err.message})
 })
